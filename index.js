@@ -61,4 +61,15 @@
             const widthItem = document.querySelector('.item').offsetWidth;
             document.getElementById('formList').scrollLeft -= widthItem;
         }
+
+
+
+        // 
+        document.getElementById("menuBtn").addEventListener("mouseover", function() {
+            document.getElementById("menu").style.display = "block";
+          });
+          
+          document.getElementById("menuBtn").addEventListener("mouseout", function() {
+            document.getElementById("menu").style.display = "none";
+          });
           

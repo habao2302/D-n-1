@@ -17,62 +17,15 @@
   <title>Shop thú cưng</title>
 
 </head>
-
 <style>
  
- .input-group {
-    width: 50%;
-    box-shadow: 3px 3px 8px #2e2e2d;
-    border-radius: 6px;
-  }
-
-  .drop-menu {
- 
-    position: absolute;
-  margin-top:10px;
-    opacity: 0;
-    left: 0;
-    transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    padding-top:60px ;
-    list-style: none;
-    pointer-events: none;
- 
-  }
-  .drop-menu li {
-    transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    left: -300px; 
-    padding: 20px; /* Add padding to li elements if needed */
-    background-color: black;
-    list-style: none;
-    margin-left: -35px;
-  
-  }
-  .drop-menu li:hover {
-    transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    left: -300px; 
-    padding: 20px; /* Add padding to li elements if needed */
-    background-color: white;
-    list-style: none;
-    margin-left: -35px;
+    .input-group {
+      width: 50%;
+      box-shadow: 3px 3px 8px #2e2e2d;
+     border-radius: 6px;
+     
+    }
    
-  
-  }
-  .drop-menu li:hover a{
-    color:black;
-  }
-
-  .drop-menu a {
-  color:#fff;
-   
-    list-style: none;
-    text-decoration: none;
-   
-  }
-  .vinhz:hover + .drop-menu,
-  .drop-menu:hover {
-    opacity: 1;
-    pointer-events: auto;
-  }
 </style>
 
 <header>
@@ -93,23 +46,9 @@ Thoát
 
 </div>
 <div style=" background-color:rgb(241, 236, 236)" class="container-fluid   text-white text-center">
-
 <div class="container header   text-center">
+  <button  style="  position: absolute;margin-top: 0px;"  type="button" class="btn vinhz m-1"><i style="font-size: 40px; text-shadow: 2px 1px 8px #111111;" style=" width: 50px;" class="	fa fa-align-justify "></i></button>
   
- 
-  <button style="   position: absolute;margin-top: 0px;" id="menuBtn" type="button" class="btn vinhz m-1">
-      <i style="font-size: 40px; text-shadow: 2px 1px 8px #111111;" class="fa fa-align-justify"></i>
-    </button>
-<div class="drop-menu">
-  <ul>
-    <li><a href="">Cá nhân của tôi</a></li>
-    <li><a href="">Giỏ hàng</a></li>
-    <li><a href="">cài đặt</a></li>
-    <li><a href="">đăng xuất</a></li>
-  </ul>
-</div>
-
-
   <div style="    filter: drop-shadow(0.5px 5px 0.1em #000000 );" class="img">
    <a href=""> <img src="img/Tlogo.png" alt="logo" height="120px" ></a>
   </div>
@@ -127,7 +66,7 @@ Thoát
     <div style="text-shadow: 2px 1px 8px #111111;" class="iconhd">
       <a style="text-decoration: none;" class="p-1 " href=""><i style="font-size: 20px;" class="  p-1 fas fa-user ">
       
-      </i>Tài khoản</a>
+      </i></a>
       <a style="text-decoration: none;" class="p-1" href=""><i style="font-size: 20px;" class="  p-1 fas fa-shopping-cart">
       
       </i> Giỏ hàng</a>
@@ -178,8 +117,4 @@ Thoát
 </div>
 </div>
 </div>
-
-
-
-
 </header>
