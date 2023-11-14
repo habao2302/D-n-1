@@ -1,457 +1,188 @@
-
 <body>
-  <div  class="  container-fluid containerslide">
 
-
-    <div style="box-shadow: 1px 1px 3px #070707;" class=" mySlides">
-        <div class="numbertext">1 / 6</div>
-        <img src="img/bn0.jpg" style="width:100%" >
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">2 / 6</div>
-        <img src="img/bn1.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">3 / 6</div>
-        <img src="img/bn0.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">4 / 6</div>
-        <img src="img/bn1.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">5 / 6</div>
-        <img src="img/bn0.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">6 / 6</div>
-        <img src="img/bn1.jpg" style="width:100%">
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-
-    <div class="caption-container">
-        <p id="caption"></p>
-    </div>
-
-    <div class="row">
-        <!-- Các div column và hình ảnh của các thumbnail ở đây giữ nguyên -->
-        <div class="column">
-            <img class="demo cursor" src="img/anh-cho1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="img/anhcho2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="img/anhcho3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="img/anhcho2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="img/anh-cho1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="img/anhcho3.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-        </div>
-    </div>
+<div style="margin-top:170px" class="slider-container">
+  <div class="slider">
+    <div><img src="../img/bn1.jpg" alt="Slide 1"></div>
+    <div><img src="../img/bn0.jpg" alt="Slide 2"></div>
+    <div><img src="../img/bn1.webp" alt="Slide 3"></div>
+  </div>
 </div>
-<div class="section  container-fluid">
-  <h1 class=" mt-5  text-center">Khám Phá Shop</i></h1>
-  <div class="container-fluid">
-    <div class=" vinh">
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.slider').slick({
+      autoplay: true,
+      autoplaySpeed: 3000,
+      dots: true,
+      prevArrow: null, // Ẩn cả nút "prev"
+      nextArrow: null, // Ẩn cả nút "next"
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true
+    });
+  });
+</script>
+  <!-- End SlidesJS Required: Start Slides -->
+
+  <!-- SlidesJS Required: Link to jQuery -->
+  
+  
+  <!-- End SlidesJS Required -->
+  
+  <div class="container-fuild ">
+ 
+        <div class="right bg-white">
+        <h1 class="   text-center ">Khám Phá Shop</h1>
+            <!-- Right column content outside the navbar-collapse -->
+            <div class="p-3">
+            <div class=" vinh">
       <h2 class="   H2Sp">Giống chó cảnh</h2>
     </div>
-   
-    <div class="row  d-flex justify-content-center">
-     
-      <div class="boxc  col-md-2 m-3">
-        <a href=" #">
-       
-      </a>  <div class="img">
-          <a href=""><img src="img/cac-loai-cho-canh-nho-2-e1539848641153-removebg-preview.png" alt="">
-          </a>
+                <div class="sanpham">
+                    <div class="row">
+                        <!-- Product Card 1 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <a href="sanpham.php"><img src="../img/bn1.jpg" class="card-img-top product-img" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="sanpham.php" class="card-title">Chó con</a>
+                                    <p class="card-text">1.000.000 VND</p>
+                                    <div class="btn-group flex-wrap">
+                                   <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Mua Ngay</button>
+                                   <a href="sanpham.php">   <button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <a href="sanpham.php"><img src="../img/bn1.jpg" class="card-img-top product-img" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="sanpham.php" class="card-title">Chó con</a>
+                                    <p class="card-text">1.000.000 VND</p>
+                                    <div class="btn-group flex-wrap">
+                                   <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Mua Ngay</button>
+                                   <a href="sanpham.php">   <button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <a href="sanpham.php"><img src="../img/bn1.jpg" class="card-img-top product-img" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="sanpham.php" class="card-title">Chó con</a>
+                                    <p class="card-text">1.000.000 VND</p>
+                                    <div class="btn-group flex-wrap">
+                                   <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Mua Ngay</button>
+                                   <a href="sanpham.php">   <button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <a href="sanpham.php"><img src="../img/bn1.jpg" class="card-img-top product-img" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="sanpham.php" class="card-title">Chó con</a>
+                                    <p class="card-text">1.000.000 VND</p>
+                                    <div class="btn-group flex-wrap">
+                                   <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Mua Ngay</button>
+                                   <a href="sanpham.php">   <button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat the above structure for more products -->
 
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="mota">
-          <tr>
-<td>
-<a href="">dfasdfa</a>
-</td>
-<p> 12000</p>
-
-
-          </tr>
-         
-          <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-        </div>
-        
-      
-      
-      </div>
-      <div class="boxc  col-md-2 m-3">
-        <a href=" #">
-       
-      </a>  <div class="img">
-          <a href=""><img src="img/cho-corgi-474828-removebg-preview.png" alt="">
-          </a>
-
-        </div>
-        <div class="mota">
-          <tr>
-<td>
-<a href="">Noodle</a>
-</td>
-<p> 12000</p>
-
-
-          </tr>
-         
-          <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-        </div>
-        
-      
-      
-      </div>
-      
-      <div class="boxc  col-md-2 m-3">
-        <a href=" #">
-       
-      </a>  <div class="img">
-          <a href=""><img src="img/cho-shiba-removebg-preview.png" alt="">
-          </a>
-
-        </div>
-        <div class="mota">
-          <tr>
-<td>
-<a href="">dfasdfasdfasdfasdfasdffa</a>
-</td>
-<p> 12000</p>
-
-
-          </tr>
-         
-          <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-        </div>
-        
-      
-      
-      </div>
-      
-      <div class="boxc col-md-2 m-3">
-        <a href=" #">
-       
-      </a>  <div class="img">
-          <a href=""><img src="img/hinh-anh-cho-cute02-removebg-preview.png" alt="">
-          </a>
-
-        </div>
-        <div class="mota">
-          <tr>
-<td>
-<a href="">dfasdfasdfasdfasdfas</a>
-</td>
-<p> 12000</p>
-
-
-          </tr>
-         
-          <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-        </div>
-        
-      
-      
-      </div>
-      <div class="boxc col-md-2 m-3">
-        <a href=" #">
-       
-      </a>  <div class="img">
-          <a href=""><img src="img/th-removebg-preview (2).png" alt="">
-          </a>
-
-        </div>
-        <div class="mota">
-          <tr>
-<td>
-<a href="">dfasdfasdfasdfasdfas</a>
-</td>
-<p> 12000</p>
-
-
-          </tr>
-         
-          <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-        </div>
-        
-      
-      
-      </div>
-      <div class="boxc col-md-2 m-3">
-        <a href=" #">
-       
-      </a>  <div class="img">
-          <a href=""><img src="img/th-removebg-preview (2).png" alt="">
-          </a>
-
-        </div>
-        <div class="mota">
-          <tr>
-<td>
-<a href="">dfasdfasdfasdfasdfas</a>
-</td>
-<p> 12000</p>
-
-
-          </tr>
-         
-          <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-        </div>
-        
-      
-      
-      </div>
-      
-      <div class="boxc  col-md-2 m-3">
-        <a href=" #">
-       
-      </a>  <div class="img">
-          <a href=""><img src="img/cho-corgi-474828-removebg-preview.png" alt="">
-          </a>
-
-        </div>
-        <div class="mota">
-          <tr>
-<td>
-<a href="">Noodle</a>
-</td>
-<p> 12000</p>
-
-
-          </tr>
-         
-          <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-        </div>
-        
-      
-      
-      </div>
-      
-      <div class="boxc  col-md-2 m-3">
-        <a href=" #">
-       
-      </a>  <div class="img">
-          <a href=""><img src="img/cho-shiba-removebg-preview.png" alt="">
-          </a>
-
-        </div>
-        <div class="mota">
-          <tr>
-<td>
-<a href="">dfasdfasdfasdfasdfasdffa</a>
-</td>
-<p> 12000</p>
-
-
-          </tr>
-         
-          <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-        </div>
-        
-      
-      
-      </div>
-      
-      <div class="boxc col-md-2 m-3">
-        <a href=" #">
-       
-      </a>  <div class="img">
-          <a href=""><img src="img/hinh-anh-cho-cute02-removebg-preview.png" alt="">
-          </a>
-
-        </div>
-        <div class="mota">
-          <tr>
-<td>
-<a href="">dfasdfasdfasdfasdfas</a>
-</td>
-<p> 12000</p>
-
-
-          </tr>
-         
-          <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-        </div>
-        
-      
-      
-      </div>
-      <div class="boxc col-md-2 m-3">
-        <a href=" #">
-       
-      </a>  <div class="img">
-          <a href=""><img src="img/th-removebg-preview (2).png" alt="">
-          </a>
-
-        </div>
-        <div class="mota">
-          <tr>
-<td>
-<a href="">dfasdfasdfasdfasdfas</a>
-</td>
-<p> 12000</p>
-
-
-          </tr>
-         
-          <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-        </div>
-        
-      
-      
-      </div>
-      
-
-      <!-- Thêm sản phẩm khác vào đây -->
-
     </div>
+ 
+
+    <!-- Thêm sản phẩm khác vào đây -->
+
   </div>
 </div>
+</div>
 <div class="container-fluid">
-  <div class=" vinh">
-    <h2 class="   H2Sp">Thức ăn cho chó</h2>
-  </div>
- 
-  <div class="row  d-flex justify-content-center">
-   
-    <div class="boxc  col-md-2 m-3">
-      <a href=" #">
-     
-    </a>  <div class="img">
-        <a href=""><img src="img/thuc-an-hat-smartheart-puppy-cho-cho-con-400g-1-removebg-preview.png" alt="">
-        </a>
 
-      </div>
-      <div class="mota">
-        <tr>
-<td>
-<a href="">dfasdfa</a>
-</td>
-<p> 12000</p>
-
-
-        </tr>
-       
-        <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-      </div>
-      
-    
-    
+        <div class="right bg-white">
+            <!-- Right column content outside the navbar-collapse -->
+            <div class="p-3">
+            <div class=" vinh">
+      <h2 class="   H2Sp">Thức ăn cho chó</h2>
     </div>
-    <div class="boxc  col-md-2 m-3">
-      <a href=" #">
-     
-    </a>  <div class="img">
-        <a href=""><img src="img/thuc-an-hat-smartheart-puppy-cho-cho-con-400g-1-removebg-preview.png" alt="">
-        </a>
-
-      </div>
-      <div class="mota">
-        <tr>
-<td>
-<a href="">Noodle</a>
-</td>
-<p> 12000</p>
-
-
-        </tr>
-       
-        <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-      </div>
-      
-    
-    
-    </div>
-    <div class="boxc col-md-2 m-3">
-      <a href=" #">
-     
-    </a>  <div class="img">
-        <a href=""><img src="img/thuc-an-hat-smartheart-puppy-cho-cho-con-400g-1-removebg-preview.png" alt="">
-        </a>
-
-      </div>
-      <div class="mota">
-        <tr>
-<td>
-<a href="">dfasdfasdfasdfasdfas</a>
-</td>
-<p> 12000</p>
-
-
-        </tr>
-       
-        <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-      </div>
-      
-    
-    
-    </div>
- 
-    
-    <div class="boxc  col-md-2 m-3">
-      <a href=" #">
-     
-    </a>  <div class="img">
-        <a href=""><img src="img/thuc-an-hat-smartheart-puppy-cho-cho-con-400g-1-removebg-preview.png" alt="">
-        </a>
-
-      </div>
-      <div class="mota">
-        <tr>
-<td>
-<a href="">dfasdfasdfasdfasdfasdffa</a>
-</td>
-<p> 12000</p>
+                <div class="sanpham">
+                    <div class="row">
+                        <!-- Product Card 1 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <a href="sanpham.php"><img src="../img/bn0.jpg" class="card-img-top product-img" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="sanpham.php" class="card-title">Chó con</a>
+                                    <p class="card-text">1.000.000 VND</p>
+                                    <div class="btn-group flex-wrap">
+                                   <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Mua Ngay</button>
+                                   <a href="sanpham.php">   <button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <a href="sanpham.php"><img src="../img/bn0.jpg" class="card-img-top product-img" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="sanpham.php" class="card-title">Chó con</a>
+                                    <p class="card-text">1.000.000 VND</p>
+                                    <div class="btn-group flex-wrap">
+                                   <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Mua Ngay</button>
+                                   <a href="sanpham.php">   <button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <a href="sanpham.php"><img src="../img/bn0.jpg" class="card-img-top product-img" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="sanpham.php" class="card-title">Chó con</a>
+                                    <p class="card-text">1.000.000 VND</p>
+                                    <div class="btn-group flex-wrap">
+                                   <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Mua Ngay</button>
+                                   <a href="sanpham.php">   <button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
+                            <div class="card">
+                                <a href="sanpham.php"><img src="../img/bn0.jpg" class="card-img-top product-img" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="sanpham.php" class="card-title">Chó con</a>
+                                    <p class="card-text">1.000.000 VND</p>
+                                    <div class="btn-group flex-wrap">
+                                   <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Mua Ngay</button>
+                                   <a href="sanpham.php">   <button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
+                                </div>
+                                </div>
+                            </div>
+                        </div>
 
 
-        </tr>
-       
-        <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-      </div>
-      
-    
-    
-    </div>
-    
-    <div class="boxc col-md-2 m-3">
-      <a href=" #">
-     
-    </a>  <div class="img">
-        <a href=""><img src="img/thuc-an-hat-smartheart-puppy-cho-cho-con-400g-1-removebg-preview.png" alt="">
-        </a>
+                        <!-- Product Card 2 -->
+                        
+                        <!-- Repeat the above structure for more products -->
 
-      </div>
-      <div class="mota">
-        <tr>
-<td>
-<a href="">dfasdfasdfasdfasdfas</a>
-</td>
-<p> 12000</p>
-
-
-        </tr>
-       
-        <button><i class="fas fa-shopping-cart"> Mua ngay</i></button>
-      </div>
-      
-    
-    
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
  
 
@@ -466,19 +197,19 @@
    <div class="   vinh">
       <h2 class="   H2Sp">Giống chó thịnh hành</h2>
     </div>
-     
-      <div style="box-shadow: 2px 2px 8px black; border-radius: 10px;" class=" mt-3 container ">
+    <div style="box-shadow: 2px 2px 8px black; border-radius: 10px;" class=" mt-3 container ">
+    <div class="direction">
+      <button id="prev"> < </button>
+      <button id="next"> > </button>
+  </div>
     <div  id="formList">
-        <div class="direction">
-        <button id="prev"> < </button>
-        <button id="next"> > </button>
-    </div>
+       
   
       <div id="list">
       
           <div class="item text-center">
-            <a href="#">
-              <img src="img/anh-cho1.jpg" class="avatar">     </a>
+            
+              <img src="img/anh-cho1.jpg" class="avatar">     
               <div class="content">
                   <table width="100%" cellspacing="0">
                       <tr>
@@ -500,8 +231,8 @@
           </div>
        
           <div class="item text-center">
-            <a href="#">
-              <img src="img/anh-cho1.jpg" class="avatar">     </a>
+           
+              <img src="img/anh-cho1.jpg" class="avatar">   
               <div class="content">
                   <table width="100%" cellspacing="0">
                       <tr>
@@ -522,8 +253,8 @@
               </div>
           </div>
           <div class="item text-center">
-            <a href="#">
-              <img src="img/anh-cho1.jpg" class="avatar">     </a>
+            
+              <img src="img/anh-cho1.jpg" class="avatar">    
               <div class="content">
                   <table width="100%" cellspacing="0">
                       <tr>
@@ -544,8 +275,8 @@
               </div>
           </div>
           <div class="item text-center">
-            <a href="#">
-              <img src="img/anh-cho1.jpg" class="avatar">     </a>
+            
+<img src="img/anh-cho1.jpg" class="avatar">   
               <div class="content">
                   <table width="100%" cellspacing="0">
                       <tr>
@@ -566,8 +297,8 @@
               </div>
           </div>
           <div class="item text-center">
-            <a href="#">
-              <img src="img/anh-cho1.jpg" class="avatar">     </a>
+            
+              <img src="img/anh-cho1.jpg" class="avatar">   
               <div class="content">
                   <table width="100%" cellspacing="0">
                       <tr>
@@ -588,8 +319,8 @@
               </div>
           </div>
           <div class="item text-center">
-            <a href="#">
-              <img src="img/anh-cho1.jpg" class="avatar">     </a>
+            
+              <img src="img/anh-cho1.jpg" class="avatar">   
               <div class="content">
                   <table width="100%" cellspacing="0">
                       <tr>
@@ -623,4 +354,6 @@
     </div>
   </div>
 </div>
+    <script src="scroll.js"></script>
+
 </body>
