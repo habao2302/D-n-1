@@ -1,8 +1,8 @@
 <body>
 
-<div style="margin-top:170px" class="slider-container">
+<div  style="margin-top:170px;" class="slider-container">
   <div class="slider">
-    <div><img src="../img/bn1.jpg" alt="Slide 1"></div>
+    <div><img src="../img/bn2.jpg" alt="Slide 1"></div>
     <div><img src="../img/bn0.jpg" alt="Slide 2"></div>
     <div><img src="../img/bn1.webp" alt="Slide 3"></div>
   </div>
@@ -15,7 +15,7 @@
   $(document).ready(function(){
     $('.slider').slick({
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 2500,
       dots: true,
       prevArrow: null, // Ẩn cả nút "prev"
       nextArrow: null, // Ẩn cả nút "next"
@@ -41,61 +41,77 @@
             <div class=" vinh">
       <h2 class="   H2Sp">Giống chó cảnh</h2>
     </div>
-                <div class="sanpham">
+                <div  class="sanpham">
                     <div class="row">
                         <!-- Product Card 1 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
-                            <div class="card">
+                        <div  class="col-lg-3 col-md-4 col-sm-6 mt-2">
+                            <div style="box-shadow: 1px 1px 8px   #acacac;"  class="card">
                                 <a href="sanpham.php"><img src="../img/bn1.jpg" class="card-img-top product-img" alt="..."></a>
-                                <div class="card-body">
-                                    <a href="sanpham.php" class="card-title">Chó con</a>
-                                    <p class="card-text">1.000.000 VND</p>
-                                    <div class="btn-group flex-wrap">
-                                   <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Mua Ngay</button>
-                                   <a href="sanpham.php">   <button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
-                                </div>
-                                </div>
+                               <!-- Trong phần mã HTML của sản phẩm -->
+                           <div class="card-body">
+                         <a href="sanpham.php" class="card-title">Chó con</a>
+                    <p class="card-text">1.000.000 VND</p>
+                  <div class="btn-group flex-wrap">
+                        <button class="btn btn-secondary m-1 rounded buy-now" data-product-id="1">Mua Ngay</button>
+                           <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
+                       </div>
+                     </div>
+
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
-                            <div class="card">
+
+
+
+                        <div  class="col-lg-3 col-md-4 col-sm-6 mt-2">
+                            <div style="box-shadow: 1px 1px 8px   #acacac;"  class="card">
                                 <a href="sanpham.php"><img src="../img/bn1.jpg" class="card-img-top product-img" alt="..."></a>
-                                <div class="card-body">
-                                    <a href="sanpham.php" class="card-title">Chó con</a>
-                                    <p class="card-text">1.000.000 VND</p>
-                                    <div class="btn-group flex-wrap">
-                                   <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Mua Ngay</button>
-                                   <a href="sanpham.php">   <button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
-                                </div>
-                                </div>
+                               <!-- Trong phần mã HTML của sản phẩm -->
+                           <div class="card-body">
+                         <a href="sanpham.php" class="card-title">Chó con</a>
+                    <p class="card-text">1.000.000 VND</p>
+                  <div class="btn-group flex-wrap">
+                        <button class="btn btn-secondary m-1 rounded buy-now" data-product-id="1">Mua Ngay</button>
+                           <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
+                       </div>
+                     </div>
+
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
-                            <div class="card">
+
+
+                        <div  class="col-lg-3 col-md-4 col-sm-6 mt-2">
+                            <div style="box-shadow: 1px 1px 8px   #acacac;"  class="card">
                                 <a href="sanpham.php"><img src="../img/bn1.jpg" class="card-img-top product-img" alt="..."></a>
-                                <div class="card-body">
-                                    <a href="sanpham.php" class="card-title">Chó con</a>
-                                    <p class="card-text">1.000.000 VND</p>
-                                    <div class="btn-group flex-wrap">
-                                   <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Mua Ngay</button>
-                                   <a href="sanpham.php">   <button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
-                                </div>
-                                </div>
+                               <!-- Trong phần mã HTML của sản phẩm -->
+                           <div class="card-body">
+                         <a href="sanpham.php" class="card-title">Chó con</a>
+                    <p class="card-text">1.000.000 VND</p>
+                  <div class="btn-group flex-wrap">
+                        <button class="btn btn-secondary m-1 rounded buy-now" data-product-id="1">Mua Ngay</button>
+                           <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
+                       </div>
+                     </div>
+
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
-                            <div class="card">
+
+
+                        <div  class="col-lg-3 col-md-4 col-sm-6 mt-2">
+                            <div style="box-shadow: 1px 1px 8px   #acacac;"  class="card">
                                 <a href="sanpham.php"><img src="../img/bn1.jpg" class="card-img-top product-img" alt="..."></a>
-                                <div class="card-body">
-                                    <a href="sanpham.php" class="card-title">Chó con</a>
-                                    <p class="card-text">1.000.000 VND</p>
-                                    <div class="btn-group flex-wrap">
-                                   <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Mua Ngay</button>
-                                   <a href="sanpham.php">   <button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
-                                </div>
-                                </div>
+                               <!-- Trong phần mã HTML của sản phẩm -->
+                           <div class="card-body">
+                         <a href="sanpham.php" class="card-title">Chó con</a>
+                    <p class="card-text">1.000.000 VND</p>
+                  <div class="btn-group flex-wrap">
+                        <button class="btn btn-secondary m-1 rounded buy-now" data-product-id="1">Mua Ngay</button>
+                           <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Chi tiết Sản phẩm</button></a>  
+                       </div>
+                     </div>
+
                             </div>
                         </div>
+                        
                         <!-- Repeat the above structure for more products -->
 
                     </div>
@@ -125,7 +141,7 @@
                             <div class="card">
                                 <a href="sanpham.php"><img src="../img/bn0.jpg" class="card-img-top product-img" alt="..."></a>
                                 <div class="card-body">
-                                    <a href="sanpham.php" class="card-title">Chó con</a>
+                                    <a href="sanpham.php" class="card-title">Chó ssssscon</a>
                                     <p class="card-text">1.000.000 VND</p>
                                     <div class="btn-group flex-wrap">
                                    <a href="sanpham.php"><button class="btn btn-secondary m-1 rounded">Mua Ngay</button>
@@ -209,7 +225,7 @@
       
           <div class="item text-center">
             
-              <img src="img/anh-cho1.jpg" class="avatar">     
+          <a href="sanpham.php"> <img src="img/anh-cho1.jpg" class="avatar">   </a>   
               <div class="content">
                   <table width="100%" cellspacing="0">
                       <tr>
@@ -226,13 +242,13 @@
                       </tr>
                   
                   </table><br>
-                  <button   class="  btn btn-secondary" >Xem chi tiết</button>
+                  <a href="sanpham.php"> <button   class=" btn btn-secondary" >Xem chi tiết</button></a>
               </div>
           </div>
        
           <div class="item text-center">
            
-              <img src="img/anh-cho1.jpg" class="avatar">   
+         <a href="sanpham.php"> <img src="img/anh-cho1.jpg" class="avatar"></a>
               <div class="content">
                   <table width="100%" cellspacing="0">
                       <tr>
@@ -249,7 +265,7 @@
                       </tr>
                   
                   </table><br>
-                  <button   class="  btn btn-secondary" >Xem chi tiết</button>
+                  <a href="sanpham.php"> <button   class="  btn btn-secondary" >Xem chi tiết</button></a>
               </div>
           </div>
           <div class="item text-center">
@@ -355,5 +371,50 @@
   </div>
 </div>
     <script src="scroll.js"></script>
+    <!-- Thêm vào phần cuối cùng của mã HTML -->
+    <script>
+  var cartItems = []; // Array to store products in the cart
+
+  // Function to update the cart count on the icon and in the modal
+  function updateCartCount() {
+    var totalCount = 0;
+    for (var i = 0; i < cartItems.length; i++) {
+      totalCount += cartItems[i].quantity;
+    }
+    $('#cart-count').text(totalCount); // Update cart icon count
+    $('#cart-quantity').text(totalCount); // Update modal count
+  }
+
+  // Function to show toastr notification
+  function showNotification(productName) {
+    toastr.success('Thêm "' + productName.trim() + '" vào giỏ hàng thành công!', 'Thông báo', {
+      closeButton: true,
+      progressBar: true,
+      positionClass: 'toast-top-right'
+    });
+  }
+
+  // Event listener for "Mua Ngay" button
+  $(document).on('click', '.buy-now', function () {
+    var productId = $(this).data('product-id');
+    var existingItem = cartItems.find(item => item.productId === productId);
+
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      cartItems.push({ productId: productId, quantity: 1 });
+    }
+
+    updateCartCount(); // Update cart count
+
+    // Customized notification message
+    var productName = $(this).closest('.card').find('.card-title').text();
+    showNotification(productName);
+
+    // You might want to replace the notification with a more user-friendly UI, like a toast or a modal.
+  });
+</script>
+
+
 
 </body>

@@ -11,11 +11,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="style1.css">
+ 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
   <title>Shop thú cưng</title>
 
 </head>
@@ -45,6 +49,7 @@
 .zalo-icon {
   width: 50px; /* Điều chỉnh kích thước của biểu tượng Zalo */
   margin-top: 20px;
+
 }
 
 @keyframes bounce {
@@ -107,7 +112,7 @@
    
    }
    .navbar-collapse{
-   
+
     display: flex;
     justify-content: space-between;
    }
@@ -115,15 +120,17 @@
   padding: 11px;
  }
  .slider-container {
-      width: 80%;
+      width: 100%;
       margin: auto;
       overflow: hidden;
+     
     }
 
     .slick-slide img {
       width: 100%;
-      height: 350px; /* Điều chỉnh chiều cao của slide tại đây */
+      height: 400px; /* Điều chỉnh chiều cao của slide tại đây */
       border-radius: 8px;
+      
     }
 
     .slick-prev,
@@ -150,7 +157,7 @@
 </style>
 
 <header>
-<!-- <div style="border-bottom: 0px;  background-color: var(--bg); box-shadow: 1px 1px 3px #070707;"  class="container-fluid   text-dark ">
+<!-- <div style="box-shadow: 1px 1px 3px #070707;"  class="container-fluid   text-dark ">
 <div style="border-bottom: 1px #f7f4f4 solid; " class=" head">
   <div>
     Email hỗ trợ: 
@@ -166,7 +173,7 @@ Thoát
 
 
 </div>
-<div style=" background-color:rgb(241, 236, 236)" class="container-fluid   text-white text-center">
+<div style=" " class="container-fluid bg-secondary   text-white text-center">
 <div class="container header   text-center">  
   <div style="    filter: drop-shadow(0.5px 5px 0.1em #000000 );" class="img">
    <a href=""> <img src="img/Tlogo.png" alt="logo" height="120px" ></a>
@@ -175,7 +182,7 @@ Thoát
   <div class="input-group">
   <input type="text" class="form-control" placeholder="Bạn đang tìm gì">
   <div class="input-group-btn rounded-end">
-    <button class="btn btn-secondary" type="submit">
+    <button class="btn btn-dark" type="submit">
       <i class="fas fa-search p-1"> </i>
     </button>
   </div>
@@ -185,7 +192,7 @@ Thoát
   
    
     <div style="text-shadow: 2px 1px 8px #111111;" class="iconhd">
-      <a style="text-decoration: none;" class="p-1 " href=""><i style="font-size: 20px;" class="  p-1 fas fa-user ">
+      <a style="text-decoration: none;" class="p-1 " href="login.php"><i style="font-size: 20px;" class="  p-1 fas fa-user ">
       
       </i>Đăng nhập</a>
       <a style="text-decoration: none;" class="p-1" href="cart.php"><i style="font-size: 20px;" class="  p-1 fas fa-shopping-cart">
@@ -204,7 +211,7 @@ Thoát
 
   
       
-<nav   class=" navbar-expand-lg navbar-light bg-light">
+<nav style="    box-shadow:1px 1px 5px  #7e878d "  class=" navbar-expand-lg navbar-light bg-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -259,13 +266,22 @@ Thoát
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="cartModalLabel">Giỏ hàng của bạn</h5>
+          <h5 class="modal-title" id="cartModalLabel">Giỏ hàng của bạn
+          <div id="cart-count-container">
+    <span id="cart-count">0</span>
+</div>
+          </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <!-- Here goes the content of your shopping cart -->
-          <!-- You can dynamically populate this section with the items in the cart -->
-          <!-- For now, let's assume you have a list of items as follows -->
+       
+      <!-- Thêm vào phần modal-body để hiển thị số lượng sản phẩm -->
+<div class="modal-body">
+  <ul>
+    <li>Sản phẩm 1 (Số lượng: <span id="cart-quantity">0</span>)</li>
+    <!-- Add more items as needed -->
+  </ul>
+</div>
+
           <ul>
             <li>Sản phẩm 1</li>
             <li>Sản phẩm 2</li>

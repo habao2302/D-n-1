@@ -32,7 +32,7 @@ justify-content: space-between;
   display: none;
  }
  :root{
-  --main-color:#f7f77b;
+  --main-color:#919191;
   --black: rgb(172, 172, 172);
   --bg: rgb(235, 235, 235);
   --border:.1rem solid #c4c4c4;
@@ -140,11 +140,13 @@ margin-top: -52px;
 
 
  .iconhd a {
-  color: #050505;
-  transition: 0.5s;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+ 
 }
 .iconhd a:hover {
   color:var(--main-color);
+
 }
 /*  */
 body{
@@ -597,6 +599,78 @@ footer {
     padding-bottom: 22.25%;
     padding-top: 30px;
     position: relative;
+}
+.item{
+  border-radius: 15px;
+  width:265px;
+  height:450px;
+  background-image: linear-gradient(to top, #AEC0CE, #ECECF2);
+  overflow: hidden;
+  transition: 0.5s;
+  margin:10px;
+  scroll-snap-align: start;
+  padding: 0;
+}
+.item .avatar{
+  display: block;
+  margin:50px auto 10px;
+  width:100px;
+  height:150px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px #7e878d;
+}
+.item .content{
+  padding:30px;
+  font-family: monospace;
+}
+.item .content table td{
+  padding:10px 0;
+  border-bottom: 1px solid #AEC0CE;
+}
+.item .content table td:nth-child(2){
+  text-align: right;
+}
+.item .nameGroup{
+  text-align: center;
+  border-bottom:none!important;
+}
+#list{
+  display: flex;
+  width:max-content;
+}
+#formList{
+  width:1280px;
+  max-width: 100%;
+  overflow: auto;
+  margin:0px auto 0px;
+  scroll-behavior: smooth;
+  scroll-snap-type: both;
+}
+.direction #next{
+  margin-left: 1100px;
+}
+.direction #prev{
+  margin-left: -40px;
+}
+#formList::-webkit-scrollbar{
+  display: none;
+}
+@media screen and (max-width: 1024px){
+  .item{
+      width: calc(33.3vw - 20px);
+  }
+  .direction{
+      display: none;
+  }
+}
+@media screen and (max-width: 768px){
+  .item{
+      width: calc(50vw - 20px);
+  }
+  .direction{
+      display: none;
+  }
 }
 /* san pham*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');

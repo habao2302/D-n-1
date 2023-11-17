@@ -1,81 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang Giới Thiệu</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Slider</title>
+    <!-- Thêm Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
 
-    .slider-container {
-      width: 80%;
-      margin: auto;
-      overflow: hidden;
-    }
-
-    .slick-slide img {
-      width: 100%;
-      height: 150px; /* Điều chỉnh chiều cao của slide tại đây */
-      border-radius: 8px;
-    }
-
-    .slick-prev,
-    .slick-next {
-      font-size: 24px;
-      color: #fff;
-      background-color: #007bff;
-      border: none;
-      border-radius: 50%;
-      padding: 10px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-    }
-
-    .slick-prev {
-      left: 10px;
-    }
-
-    .slick-next {
-      right: 10px;
-    }
-  </style>
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
 
-<div class="slider-container">
-  <div class="slider">
-    <div><img src="https://placekitten.com/1200/400" alt="Slide 1"></div>
-    <div><img src="https://placekitten.com/1200/401" alt="Slide 2"></div>
-    <div><img src="https://placekitten.com/1200/402" alt="Slide 3"></div>
-  </div>
-</div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <!-- Chèn ảnh meme hoặc nội dung meme của bạn vào đây -->
+                <iframe width="560" height="315" src="https://video.search.yahoo.com/video/play;_ylt=Awr.0snwiVZlzHQbI2X7w8QF;_ylu=c2VjA3NyBHNsawN2aWQEZ3BvcwMyMA--?p=meme+m%C3%A8o&vid=cc14ea1772827e62c525d7c035ecef2f&turl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOVP.c__GmUkzOunrTqHXW2cQ8gJYIy%26pid%3DApi%26h%3D562%26w%3D600%26c%3D7%26rs%3D1&rurl=https%3A%2F%2Fwww.tiktok.com%2F%40nyc.jav3%2Fvideo%2F7231962955221323051&tit=Huh+%23huhcatmeme+%23huh+%23%3Cb%3Ememe%3C%2Fb%3E+%23fyp+%23xyzbca+%7C+huh+%3Cb%3Ememe%3C%2Fb%3E+sound+original+video&c=19&sigr=AJwh2.p84_o1&sigt=8MF87orgXwdj&sigi=hW24mmbA9mWU&fr=p%3As%2Cv%3Av&h=562&w=600&l=13&age=1683822618&fr=mcafee&type=E210US885G0&tt=b" frameborder="0" allowfullscreen></iframe>
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+            </div>
+            <div class="swiper-slide">
+                <img src="path/to/meme-image-2.jpg" alt="Meme 2">
+            </div>
+            <!-- Thêm các slide khác tùy ý -->
+        </div>
+        <!-- Thêm nút điều hướng nếu bạn muốn -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 
-<script>
-  $(document).ready(function(){
-    $('.slider').slick({
-      autoplay: true,
-      autoplaySpeed: 3000,
-      dots: true,
-      prevArrow: null, // Ẩn cả nút "prev"
-      nextArrow: null, // Ẩn cả nút "next"
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      adaptiveHeight: true
-    });
-  });
-</script>
-
+    <!-- Thêm Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Khởi tạo Swiper
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
