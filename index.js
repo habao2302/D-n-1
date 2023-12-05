@@ -181,3 +181,45 @@
            });
         });
      });
+
+     var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+     
+      function scrollToTop() {
+        var title = document.querySelector('.tieude');
+        if (title) {
+          console.log('Scrolling to top!');
+          title.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.error('Element with class "tieude" not found!');
+        }
+      }
+  
+      document.addEventListener('DOMContentLoaded', function () {
+        window.addEventListener('scroll', function () {
+          var arrowUp = document.querySelector('.arrow-up');
+  
+          if (window.scrollY > window.innerHeight / 2) {
+            // If scrolled down more than half of the window height, show the arrow
+            arrowUp.style.display = 'block';
+          } else {
+            // Otherwise, hide the arrow
+            arrowUp.style.display = 'none';
+          }
+        });
+      });
+
+      

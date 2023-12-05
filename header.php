@@ -11,7 +11,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
- 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Fontawesome CDN Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -67,7 +70,7 @@
   transform: rotate(-90deg);
   position: absolute;
   right: 6px;
-  top: .8em;
+ 
   
 }
 @media screen and (max-width: 1066px){
@@ -91,15 +94,16 @@
       width: 50%;
       box-shadow: 3px 3px 8px #2e2e2d;
      border-radius: 6px;
+   
      
     }
     .navbar-nav .nav-link{
     text-decoration: none;
     transition: 0.3s;
-    margin-bottom: 0.2rem;
-    margin-left: 20px;
+padding: 0.2rem;
+    margin-left: 70px;
     font-size: 1.25rem ;
-    padding-bottom: 0.2rem;
+    
     
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    }
@@ -128,7 +132,7 @@
 
     .slick-slide img {
       width: 100%;
-      height: 400px; /* Điều chỉnh chiều cao của slide tại đây */
+      height: 550px; /* Điều chỉnh chiều cao của slide tại đây */
       border-radius: 8px;
       
     }
@@ -154,6 +158,9 @@
     .slick-next {
       right: 10px;
     }
+  .zalo-container{
+    
+  }
 </style>
 
 <header>
@@ -171,10 +178,20 @@ Thoát
 
 
 
+<div class=" tieude">
+    <div>
+    <strong><p>WELCOME TO HAPPY PAWS – WE CARE WITH LOVE...</p></strong>  
+    </div>
+    <div  style=" ">
+      <a href="">Gian hàng shoppe    </a> | <a href=""> Liên hệ</a>| <a href=""><i class="fa fa-facebook"></i>
+</a>
+    </div>
+  </div>
 
-</div>
-<div style=" " class="container-fluid bg-secondary   text-white text-center">
+<div style="   position:relative;  " class="container-fluid bg-white   text-dark text-center">
+
 <div class="container header   text-center">  
+ 
   <div style="    filter: drop-shadow(0.5px 5px 0.1em #000000 );" class="img">
    <a href=""> <img src="img/Tlogo.png" alt="logo" height="120px" ></a>
   </div>
@@ -183,7 +200,7 @@ Thoát
   <input type="text" class="form-control" placeholder="Bạn đang tìm gì">
   <div class="input-group-btn rounded-end">
     <button class="btn btn-dark" type="submit">
-      <i class="fas fa-search p-1"> </i>
+      <i style=" color:  rgb(180, 108, 49);" class="fas fa-search p-1"> </i>
     </button>
   </div>
 </div>
@@ -191,77 +208,63 @@ Thoát
       
   
    
-    <div style="text-shadow: 2px 1px 8px #111111;" class="iconhd">
-      <a style="text-decoration: none;" class="p-1 " href="login.php"><i style="font-size: 20px;" class="  p-1 fas fa-user ">
+<div class="">
+                    <?php
+                     if(isset($_SESSION['user'])&&(is_array($_SESSION['user']))){
+                        extract($_SESSION['user']);
+                    ?> 
+                     <div style="" class="iconhd">
+    <strong>  <a style="text-decoration: none;" class="p-1 " href=""><i style="font-size: 20px;" class="  p-1 fas fa-user ">
       
-      </i>Đăng nhập</a>
-      <a style="text-decoration: none;" class="p-1" href="cart.php"><i style="font-size: 20px;" class="  p-1 fas fa-shopping-cart">
+      </i>  <?=$user?></a></strong>
+      <strong>   <a style="text-decoration: none;" class="p-1" href="index.php?act=addtocart"><i style="font-size: 20px; " class="   p-1 fas fa-shopping-cart">
       
-      </i> Giỏ hàng</a>
-      <a style="text-decoration: none;" class="p-1 " href=""><i style="font-size: 20px;" class="  p-1 fa fa-cog fa-spin">
+      </i> Giỏ hàng</a></strong>
+      <?php if($role==1) {?>
+        <strong>  <a style="text-decoration: none;" class="p-1 " href="admin/index.php"><i style="font-size: 20px;" class="  p-1 fa fa-audio-description">
       
-      </i> Cài đặt</a>
+      </i> Admin</a></strong> <?php }?> 
+     
+      
+      <strong>  <a style="text-decoration: none;" class="p-1 " href="index.php?act=thoat"><i style="font-size: 20px;" class="  p-1 	fa fa-sign-in">
+      
+      </i> thoát</a></strong>
+      
+        </div>
+     
+                   
+                    <?php
+
+
+
+
+        
+                     }else{                  
+                    ?>
+                   <div style="" class="iconhd">
+    <strong>  <a style="text-decoration: none;" class="p-1 " href="login.php"><i style="font-size: 20px;" class="  p-1 fas fa-user ">
+      
+      </i>  đăng nhập</a></strong>
+      <strong>   <a style="text-decoration: none;" class="p-1" href="index.php?act=addtocart"><i style="font-size: 20px; " class="   p-1 fas fa-shopping-cart">
+      
+      </i> Giỏ hàng</a></strong>
+    
      
         </div>
+
+                    <?php 
+                      }
+                    ?>
+                </div>
       </div>
+ </div>
+
+
+ </div>
+
+ 
 </div>
 
-
-</div>
-
-  
-      
-<nav style="    box-shadow:1px 1px 5px  #7e878d "  class=" navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="  collapse navbar-collapse" id="navbarTogglerDemo01">
-      
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.php">Trang chủ <span class="sr-only"></span></a>
-        </li>
-      
-        <li class="nav-item">
-          <a class="nav-link" href="sanphamnav.php">Mua Sắm</a>
-        </li>
-      
-      
-     <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dịch vụ
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Cún </a></li>
-            <li><a class="dropdown-item" href="#">Áo quần cho cún</a></li>
-            <li><a class="dropdown-item" href="#">Đồ chơi cho cún</a></li>
-            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Các đồ vật khác cho cún</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Thuốc</a></li>
-                <li><a class="dropdown-item" href="#">Khăn </a></li>
-  
-  
-           
-  
-  
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Giới thiệu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">Thông tin</a>
-        </li>
-      </ul>
-    
-    </div>
-
-
-    
-  </nav>
-</div>
 <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -275,39 +278,7 @@ Thoát
         </div>
        
       <!-- Thêm vào phần modal-body để hiển thị số lượng sản phẩm -->
-<div class="modal-body">
-  <ul>
-    <li>Sản phẩm 1 (Số lượng: <span id="cart-quantity">0</span>)</li>
-    <!-- Add more items as needed -->
-  </ul>
-</div>
 
-          <ul>
-            <li>Sản phẩm 1</li>
-            <li>Sản phẩm 2</li>
-            <!-- Add more items as needed -->
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-          <button type="button" class="btn btn-primary">Thanh toán</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <!-- Include Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    // Add an event listener to the shopping cart icon
-    document.querySelector('.fa-shopping-cart').addEventListener('click', function () {
-      // Show the cart modal when the icon is clicked
-      var myModal = new bootstrap.Modal(document.getElementById('cartModal'));
-      myModal.show();
-    });
-  </script>
 </header>
 
 
@@ -333,9 +304,50 @@ Thoát
       });
     });
   </script>
-   <div class="zalo-container">
+  <div  class="zalo">
+   <div class="zalo-container ">
     <a href=""><img src="img/zalo_icon.png" alt="Zalo Icon" class="zalo-icon"></a>
     <a href=""> <img src="img/face_icon.png" alt="face Icon" class="zalo-icon"></a>
-    
+    </div>
   </div>
-  
+  <div class="arrow-up " onclick="scrollToTop()">
+    <i class="fa fa-chevron-up"></i>
+  </div>
+  <script>
+     function scrollToTop() {
+      var title = document.querySelector('.tieude');
+      if (title) {
+        console.log('Scrolling to top!');
+        title.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.error('Element with class "tieude" not found!');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      window.addEventListener('scroll', function () {
+        var arrowUp = document.querySelector('.arrow-up');
+
+        if (window.scrollY > window.innerHeight / 2) {
+          // If scrolled down more than half of the window height, show the arrow
+          arrowUp.style.display = 'block';
+        } else {
+          // Otherwise, hide the arrow
+          arrowUp.style.display = 'none';
+        }
+      });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      window.addEventListener('scroll', function () {
+        var arrowUp = document.querySelector('.zalo');
+
+        if (window.scrollY > window.innerHeight / 2) {
+          // If scrolled down more than half of the window height, show the arrow
+          arrowUp.style.display = 'block';
+        } else {
+          // Otherwise, hide the arrow
+          arrowUp.style.display = 'none';
+        }
+      });
+    });
+  </script>

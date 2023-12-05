@@ -1,44 +1,3 @@
-<header>
-    <?php
-    include "header.php";
-    ?>
-</header>
-<head>
-    <style>
-        /* CSS cho form */
-.formtaikhoan {
-    max-width: 300px;
-    margin: 0 auto;
-}
-
-.formtaikhoan label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.formtaikhoan input[type="text"],
-.formtaikhoan input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-}
-
-.formtaikhoan input[type="checkbox"] {
-    margin-bottom: 10px;
-}
-
-
-
-/* CSS cho thông báo */
-.thongbao {
-    color: red;
-    text-align: center;
-    margin-top: 50px;
-}
-
-    </style>
-</head>
 <nav style="    box-shadow:1px 1px 5px  #7e878d "  class="container-fluid navdrop  navbar-expand-lg navbar-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -89,34 +48,47 @@
 
     
   </nav>
-<div style="margin-top:50px" class="row mb ">
-                <div class="boxtitle"><h1>Đăng nhập</h1></div>
-                <div class="boxcontent formtaikhoan">
-                  
-                    <form action="index.php?act=dangnhap" method="post">
-                        <label for="">Tên Đăng nhập</label>
-                        <input type="text" name="user"><br><br>
-                        <label for="">Mật khẩu</label>
-                        <input type="password" name="pass"><br>
-                        <input type="checkbox" name="" id="">Ghi nhớ tài khoản? <br>
-                        <input type="submit" class="" name="dangnhap" value="Đăng nhập"></input>
-                    </form>
-                    <li><a href="#">Quên Mật khẩu</a></li>
-                    <li><a href="index.php?act=dangky">Đăng kí thành viên</a></li>
+  <head>
+    <style>
+        .formdk {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.thongbao{
+    font-size:20px;
+    text-align: center;
+}
+    </style>
+  </head>
+<div style="margin-top:50px;" class="">
 
-                  
+           <div class=" ">
+           <div class="row mb ">
+                <div class="boxtitle"><h2>ĐĂNG KÝ THÀNH VIÊN</div>
+                <div class=" boxcontent formdk">
+                    <form action="index.php?act=dangky" method="post">
+                    <div class="form-group">
+                        <label >Email:</label>
+                        <input type="email" name ="email" class="form-control"><br>
+                        <label >User:</label>
+                        <input type="text" name="user" class="form-control"><br>
+                        <label >Password:</label>
+                        <input type="password" name="pass" class="form-control" ><br>
+                      
+                        <input type="submit" class="btn btn-primary" name="dangky" value= "Đăng ký" ><br><br>
+                        <input type="reset" class="btn btn-info" name="Nhập lại" >
+                    </div>
+                    </form>
+                   
                 </div>
                 <h2 class="thongbao">
                     <?php
-                           if(isset($thongbao1)&&($thongbao1!="")){
-                            echo $thongbao1;
+                           if(isset($thongbao)&&($thongbao!="")){
+                            echo $thongbao;
                            }
                     ?>
                     </h2>
             </div>
-               
-            <?php
-            include "footer.php"
-            ?>
-            <!--   <div class="boxcontent formtaikhoan">
-           
+    
+           </div>
+          

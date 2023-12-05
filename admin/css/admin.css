@@ -1,0 +1,60 @@
+.headerad{
+    background-color: rgb(134, 132, 130);
+    color: white;
+    
+    font-size: 30px; box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2); /* Bóng đổ */
+}
+.br5{
+    border-radius: 5px;
+}
+.headerad h1{
+    margin-top: 10px;
+    font-size: 45px;
+   margin-left: 50px;
+   text-shadow: 4px 4px 8px #181717;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.frmcontent form{
+   margin-left: 40px;
+}
+.frmcontent input[type='text']{
+    width: 50%;
+    height: 40px;
+    border: 1px #ccc solid;
+    padding: 5px 10px;
+    border-radius: 5px; 
+}
+.frmcontent input[type="submit"],
+.frmcontent input[type="reset"],
+.frmcontent input[type="button"]{
+    background-color: rgb(150, 148, 148);
+padding: 5px 10px;
+    border: #141313;
+    border-radius: 5px; 
+    color: #080808;
+    transition: 0.5s;
+}
+.frmcontent input[type="submit"]:hover,
+.frmcontent input[type="reset"]:hover,
+.frmcontent input[type="button"]:hover
+{
+   background-color: rgb(14, 13, 13);
+padding: 5px 10px;
+    border: #141313;
+    border-radius: 5px; 
+    color: #ccc;
+    transition: 0.5s;
+}
+.frmcontent input[type="submit"]:active,
+.frmcontent input[type="reset"]:active,
+.frmcontent input[type="button"]:active
+{
+   background-color: rgb(248, 247, 247);
+padding: 5px 10px;
+    border: #141313;
+    border-radius: 5px; 
+    color: #020202;
+    transition: 0.5s;
+}
