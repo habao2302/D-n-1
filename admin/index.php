@@ -11,7 +11,6 @@ if(isset($_GET['act'])){
     $act=$_GET['act'];
     switch($act){
         case 'adddm':
-            // kiểm tra xem ng dùng có nhấn vào nút add k ?
             if(isset($_POST['themmoi'])&&($_POST['themmoi'])){
                 $tenloai=$_POST['tenloai'];
                 insert_danhmuc($tenloai);

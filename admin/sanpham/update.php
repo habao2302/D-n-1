@@ -12,6 +12,7 @@
 
 ?>
 <div class="container">
+            <div class="row frmtitle"><h1>-</h1></div>
             <div class="row frmtitle"><h1>CẬP NHẬP LOẠI HÀNG HÓA</h1></div>
         </div>
         <div class="row frmcontent">

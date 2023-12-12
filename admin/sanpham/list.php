@@ -1,5 +1,6 @@
 <div class="container">
-<div class="row frmtitle"><h1>DANH SÁCH HÀNG HÓA</h1></div>
+<div class="row frmtitle"><h1>-</h1> </div>
+<div class="row frmtitle"><h1>DANH SÁCH HÀNG HÓA</h1> </div>
 <div class="row frmcontent">
   <div class="mb">
   <div class="row  dsach frtimk">
